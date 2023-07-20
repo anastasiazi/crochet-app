@@ -1,0 +1,31 @@
+.patternManager {
+    text-align: center;
+    background-color: #ffd1dc;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 50px auto;
+    border-radius: 15px;
+    width: 400px;
+}
+
+.patternManager h1 {
+    color: #ff69b4;
+}
+
+.patternManager button {
+    color: white;
+    background-color: #ff69b4;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: block; /* Buttons appear in separate lines */
+
+    /*self added code*/
+    border-radius: 15px;
+    width: 200px;
+    margin: 20px auto;
+}
+
+.patternManager button:hover {
+    background-color: #ff1493;
+}
