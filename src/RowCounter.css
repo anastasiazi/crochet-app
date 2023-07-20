@@ -1,0 +1,45 @@
+.rowCounter {
+    text-align: center;
+    margin: 50px auto;
+    width: 400px;
+    background-color: #ffd1dc;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.rowCounter h1 {
+    color: #ff69b4;
+}
+
+.rowCounter p {
+    color: #ff1493;
+}
+
+.rowCounter button {
+    color: white;
+    background-color: #ff69b4;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: block; /* Buttons appear in separate lines */
+
+    /*self added code*/
+    border-radius: 15px;
+    width: 200px;
+    margin: 20px auto;
+}
+
+.rowCounter button:hover {
+    background-color: #ff1493;
+}
+
+.rowCounter button:last-of-type { /* Selects the last button, which is the reset button */
+    color: #ff69b4; /* Pink color similar to the other buttons */
+    background-color: white; /* White background for contrast */
+    border: 2px solid #ff69b4; /* Pink border */
+}
+
+.rowCounter button:last-of-type:hover { /* Hover effect for the reset button */
+    background-color: #ff69b4; /* Pink background */
+    color: white; /* White text */
+}
