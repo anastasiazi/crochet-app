@@ -1,18 +1,18 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import RowCounter from './RowCounter';
-import './RowCounter.css';
-import './PatternManager.css';
-import PatternManager from './PatternManager';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import MainPage from "./MainPage";
+import RowCounter from "./RowCounter";
+import PatternManager from "./PatternManager";
+
+
 
 function App() {
     return (
         <Router>
-            <div className="App">
-                <Routes>
-                    <Route path="/patterns" element={<PatternManager />} />
-                    <Route path="/" element={<RowCounter />} />
-                </Routes>
-            </div>
+            <Routes>
+                <Route path="/" element={<MainPage />} />
+                <Route path="/rowcounter" element={<RowCounter />} />
+                <Route path="/patternmanager" element={<PatternManager />} />
+            </Routes>
         </Router>
     );
 }

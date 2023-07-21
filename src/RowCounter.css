@@ -1,10 +1,26 @@
 .rowCounter {
-    text-align: center;
-    margin: 50px auto;
-    width: 400px;
-    background-color: #ffd1dc;
-    border-radius: 15px;
     padding: 20px;
+
+    background: linear-gradient(179.4deg, rgb(253, 240, 233) 2.2%, rgb(255, 194, 203) 96.2%);
+    margin: 20px auto;
+    border-radius: 30px;
+
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* This creates space between buttons in the same row */
+    width: 100%;
+}
+
+.row:last-child {
+    margin-top: 40px; /* This creates additional space before the last row */
 }
 
 .rowCounter h1 {
@@ -12,25 +28,35 @@
 }
 
 .rowCounter p {
+    text-align: center;
+    font-size: 40px;
     color: #ff1493;
+    padding: 0;
+    margin: 10px;
+    font-weight: bold;
 }
 
 .rowCounter button {
-    color: white;
-    background-color: #ff69b4;
+    display: inline-block;
+    color: #FF69B4;
+    background-color: rgba(255, 238, 238, 0.1);
     border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    display: block; /* Buttons appear in separate lines */
+    padding: 15px 30px;
+    margin: 10px;
+    text-decoration: none;
+    border-radius: 50px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(255, 105, 180, 0.5); /* Modified the color to pink */
+    transition: all 0.3s ease-in;
+    border: 1px solid #f1f1f1;
 
-    /*self added code*/
-    border-radius: 15px;
-    width: 200px;
-    margin: 20px auto;
+    font-weight: bold;
 }
 
 .rowCounter button:hover {
-    background-color: #ff1493;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 8px 32px 0 rgba(255, 105, 180, 0.57); /* Modified the color to pink */
+    color: deeppink;
 }
 
 .rowCounter button:last-of-type { /* Selects the last button, which is the reset button */
