@@ -1,31 +1,83 @@
 .patternManager {
     text-align: center;
-    background-color: #ffd1dc;
-    border-radius: 15px;
     padding: 20px;
-    margin: 50px auto;
-    border-radius: 15px;
-    width: 400px;
+
+    background: linear-gradient(179.4deg, rgb(253, 240, 233) 2.2%, rgb(255, 194, 203) 96.2%);
+    margin: 20px auto;
+    border-radius: 30px;
 }
 
 .patternManager h1 {
     color: #ff69b4;
 }
 
-.patternManager button {
-    color: white;
-    background-color: #ff69b4;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    display: block; /* Buttons appear in separate lines */
-
-    /*self added code*/
-    border-radius: 15px;
-    width: 200px;
-    margin: 20px auto;
+.patternManager form {
+    text-align: center;
+    margin-top: 30px;
 }
 
-.patternManager button:hover {
-    background-color: #ff1493;
+.patternManager form input[type="file"] {
+    display: none; /* This will hide the default file input */
+}
+
+/* This will be our new upload button */
+.patternManager form label {
+    display: inline-block;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 15px 30px;
+    margin: 10px;
+    text-decoration: none;
+    border-radius: 50px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(255, 105, 180, 0.37);
+    transition: all 0.3s ease;
+    cursor: pointer; /* To change the mouse cursor when hovering over the label */
+}
+
+.patternManager form label:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(255, 105, 180, 0.57);
+}
+
+.patternManager form label:active {
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(255, 105, 180, 0.67);
+}
+
+.patternManager form button {
+    background-color: rgba(255, 238, 238, 0.1);
+    color: #FF69B4;
+    border: none;
+    padding: 15px 30px;
+    margin: 10px;
+    text-decoration: none;
+    border-radius: 50px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(255, 105, 180, 0.5); /* Modified the color to pink */
+    transition: all 0.3s ease-in;
+
+    font-weight: bold;
+}
+
+
+.patternManager button {
+    background-color: rgba(255, 238, 238, 0.1);
+    color: #FF69B4;
+    border: none;
+    padding: 15px 30px;
+    margin: 10px;
+    text-decoration: none;
+    border-radius: 50px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(255, 105, 180, 0.5); /* Modified the color to pink */
+    transition: all 0.3s ease-in;
+
+    font-weight: bold;
+}
+
+.patternManager button:hover  {
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 8px 32px 0 rgba(255, 105, 180, 0.57); /* Modified the color to pink */
+    color: deeppink;
 }
